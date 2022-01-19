@@ -17,7 +17,7 @@
   --size-800: calc(var(--base-size) * 2.441);
   --size-900: calc(var(--base-size) * 3.052);
 
-  --color-bg: white;
+  --color-bg: hsl(0 0% 98%);
   --color-primary: #71A894;
   --color-text-h: #303031;
   --color-text-p: #66645E;

@@ -34,6 +34,7 @@ body {
 h1 {
   color: var(--color-text-h);
   font-size: var(--size-900);
+  line-height: 1.1;
   max-width: 15ch;
 }
 
@@ -41,6 +42,7 @@ h2,
 h3 {
   color: var(--color-text-h);
   font-size: var(--size-600);
+  line-height: 1.1;
   max-width: 25ch;
 }
 

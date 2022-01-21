@@ -1,5 +1,6 @@
 .header-main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-top: var(--size-800);
@@ -7,20 +8,24 @@
 
 .header-main > div {
   display: flex;
+  align-items: center;
+  gap: var(--size-200);
+  padding-bottom: var(--size-400);
 }
 
 .header-main__logo {
   width: 64px;
-  padding-right: var(--size-100);
 }
 
 .header-main__ul {
   display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-200) var(--size-600);
+  padding-bottom: var(--size-400);
 }
 
 .header-main__ul > li {
   color: var(--color-text-h);
-  padding-left: var(--size-800);
 }
 
 .header-main__ul > li:last-child {
@@ -82,10 +87,15 @@
 }
 
 .section-reimagine > div {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--size-400);
   padding-top: var(--size-600);
+}
+
+.section-reimagine > div > * {
+  flex-grow: 1;
+  flex-basis: calc((40rem - 100%) * 999);
 }
 
 .section-reimagine__card {

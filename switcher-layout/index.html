@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Switcher Layout</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+  </head>
+  <style>
+    body {
+      color: white;
+      background-color: black;
+    }
+
+    main {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .switcher {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      --threshold: 40rem;
+    }
+
+    .switcher > * {
+      flex-grow: 1;
+      flex-basis: calc((var(--threshold) - 100%) * 999);
+    }
+
+    .box {
+      border: 4px solid white;
+      height: 10rem;
+    }
+
+    .wrapper {
+      max-width: 64rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  </style>
+
+  <body>
+    <main class="wrapper">
+      <div class="switcher">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </main>
+  </body>
+</html>
